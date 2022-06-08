@@ -1,0 +1,24 @@
+h1 {
+    width: 65px;
+    color: orange; 
+    font-family: sans-serif;
+    font-weight: 600;       
+}
+.TrocaDeCorF {
+    background-color: bisque;
+}
+body {
+    font-size: 16px;
+}
+p {
+    height: 3em;
+}
+#Li1 {
+    background-color: yellow;
+}
+#Li2 {
+    background-color: red;
+}
+#Li3{
+    background-color: brown;
+}
