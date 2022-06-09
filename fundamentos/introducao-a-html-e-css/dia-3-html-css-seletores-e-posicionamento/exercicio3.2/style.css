@@ -1,0 +1,10 @@
+div:hover{
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+#h3terceira{
+    background-color: red;
+    font-size: larger;
+}
