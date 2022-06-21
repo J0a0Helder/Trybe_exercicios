@@ -1,4 +1,4 @@
-let estade;
+let estade = "reprovada"
 
 switch(estade){
     case "aprovada":
@@ -7,7 +7,7 @@ switch(estade){
     case "lista":
         console.log ("lista");
         break;
-    case "aprovada":
+    case "reprovada":
         console.log ("reprovada");
         break;
     default:
