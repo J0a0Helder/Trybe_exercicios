@@ -1,23 +1,23 @@
-let numb = 55
+let numb = 55;
 
 if(numb >= 90 && numb < 100){
-    console.log("A")
+    console.log("A");
 }
 else if(numb >= 80 && numb < 100){
-    console.log("B")
+    console.log("B");
 }
 else if(numb >= 70 && numb < 100){
-    console.log("C")
+    console.log("C");
 }
 else if(numb >= 60 && numb < 100){
-    console.log("D")
+    console.log("D");
 }
 else if(numb >= 50 && numb < 100){
-    console.log("E")
+    console.log("E");
 }
 else if(numb < 50 && numb > 0){
-    console.log("F")
+    console.log("F");
 }
 else if (numb < 0 || numb > 100 ){
-    console.log("Número inválido")
+    console.log("Número inválido");
 }
