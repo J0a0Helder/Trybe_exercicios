@@ -8,5 +8,5 @@ for (let index = 0; index < array.length; index += 1) {
     result = result * array[index];   
 }
 
-console.log(result)
+console.log(result);
 
