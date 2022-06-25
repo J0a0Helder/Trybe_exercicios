@@ -9,7 +9,6 @@ function encontraMaior(array){
         }
       }
       return maior;
-      console.log(maior);
 }
 
 console.log(encontraMaior([2, 3, 6, 70, 10, 1]));

@@ -2,14 +2,13 @@
 
 function encontraMenor(array){
     
-    let maior = 0;
+    let menor = 0;
     for (let index in array) {
-        if (array[maior] > array[index]) {
-          maior = index;
+        if (array[menor] > array[index]) {
+          menor = index;
         }
       }
-      return maior;
-      console.log(maior);
+      return menor;
 }
 
 console.log(encontraMenor([2, 4, 6, 7, 10, 0, -3]));
