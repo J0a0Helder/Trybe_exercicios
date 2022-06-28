@@ -17,7 +17,7 @@ function TrocarVermelho() {
 TrocarVermelho();
 
 function textoTitle() {
-    let corretor = document.getElementsByTagName('h1');
+    let corretor = document.getElementsByTagName('h1')[0];
     corretor.innerText = "Exercício 5.1 - JavaScript"
 }
 textoTitle();
@@ -27,3 +27,9 @@ function UppercaseParagrafo() {
     paragrafos.innerHTML = paragrafos.innerHTML.toUpperCase('')
 }
 UppercaseParagrafo();
+
+function exibirParagrafo() {
+    let paragrafo1 = document.getElementsByTagName('p');
+    console.log(paragrafo1)
+}
+exibirParagrafo();
