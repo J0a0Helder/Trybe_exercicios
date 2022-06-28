@@ -24,12 +24,12 @@ textoTitle();
 
 function UppercaseParagrafo() {
     let paragrafos = document.getElementsByClassName('center-content')[0];
-    paragrafos.innerHTML = paragrafos.innerHTML.toUpperCase('')
+    paragrafos.innerHTML = paragrafos.innerHTML.toUpperCase('');
 }
 UppercaseParagrafo();
 
 function exibirParagrafo() {
     let paragrafo1 = document.getElementsByTagName('p');
-    console.log(paragrafo1)
+    console.log(paragrafo1);
 }
 exibirParagrafo();
