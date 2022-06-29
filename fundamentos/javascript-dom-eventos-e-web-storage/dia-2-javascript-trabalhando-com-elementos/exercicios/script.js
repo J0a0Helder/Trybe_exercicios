@@ -1,4 +1,4 @@
-// 1 
+// 1 e part 2.1
 const h1 = document.createElement('h1');
 h1.innerText = 'Exercício 5.2 - JavaScript DOM';
 h1.className = 'title';
@@ -47,3 +47,11 @@ const NomeNumeros = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
   li.innerHTML = NomeNumeros[num];
   ul.appendChild(li);
 }
+
+// 9 e part 2.2
+for (let i = 1; i <= 3; i += 1) {
+    const h3 = document.createElement('h3');
+    h3.className = 'description';
+    h3.innerHTML = i;
+    main.appendChild(h3);
+  }
