@@ -1,0 +1,81 @@
+/* para a estilização do formulário usei este video da Rafaella Ballerini
+ como referencia: https://youtu.be/wwqOJ2o84S4 */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #f0f8ff;
+  font-size: 1em;
+  font-family: sans-serif;
+  margin-left: 36%;
+  margin-top: 2%;
+  justify-content: center;
+}
+
+#header{
+  font-family: sans-serif;
+  color: rgb(8, 199, 135);
+  margin: 20px;
+}
+
+p{
+  font-family: sans-serif;
+  color: rgb(8, 199, 135);
+  margin: 20px;
+}
+
+fieldset{
+  border: 0;
+  color: rgb(8, 199, 135);
+}
+
+input, select, textarea, button{
+  border-radius: 5px;
+}
+
+.content-line{
+  margin-bottom: 1em;
+}
+
+.content-line label{
+  margin-bottom: 0.2em;
+  color: rgb(8, 199, 135);
+  display: block;
+}
+
+.content-line input[type="text"], .content-line input[type="email"], .content-line input[type="date"],  .content-line select, .content-line textarea{
+  padding: 0.2em;
+  border: 1px solid rgb(6, 138, 94);
+  box-shadow: 2px 2px 2px rgba(0,0,0,2);
+}
+
+.content-line input:focus, .content-line select:focus, .content-line textarea:focus{
+  background: rgb(204, 245, 231);
+}
+
+#button-submit{
+  font-size: 1.2em;
+  background: rgb(126, 224, 191);
+  border: 0;
+  margin-bottom: 1em;
+  color: #ffffff;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  
+}
+
+#button-reset{
+  font-size: 1.2em;
+  background: rgb(126, 224, 191);
+  border: 0;
+  margin-bottom: 1em;
+  color: #ffffff;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  
+}
