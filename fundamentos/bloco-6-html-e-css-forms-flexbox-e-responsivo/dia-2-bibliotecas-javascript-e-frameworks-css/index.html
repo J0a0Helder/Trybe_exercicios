@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Formulário TrybeTrip</title>
   </head>
-  <body>
+  <body class="bg-secondary container">
     <header id="header">
       <h1>Formulário TrybeTrip!</h1>
     </header>
@@ -16,23 +16,27 @@
 
     <form action="" method="get" id="form">
       <div id="content-container">
-        <fieldset>
-          <div class="content-line">
-            <label for="name-input">
-            Nome: <input type="text" name="full-name" id="name-input" required>
-            </label>
-          </div>
-          <div class="content-line">
-            <label for="email-input">
-            E-mail: <input type="email" name="e-mail" id="email-input" required>
-            </label>
-          </div>
-        </fieldset>
+          <div class="row">
+            <div class="content-line form-floating col-auto">
+              <input type="text" name="full-name" id="name-input" placeholder="Nome" required class="form-control">
+              <label for="name-input">Nome</label>
+              <div class="form-text mb-1">
+                Your Name must be 10-40 characters long.
+              </div>
+            </div>
 
-        <div class="content-line">
-          <label for="destination1">Preferência de destino:</label>
-         <select name="destination" id="travel-options">
-          <option value="" selected disabled></option>
+            <div class="content-line form-floating col-auto">
+              <input type="email" name="e-mail" id="email-input" placeholder="email" required class="form-control">
+              <label for="email-input">E-mail</label>
+              <div class="form-text mb-5">
+                Your e-mail must be 10-50 characters long.
+              </div>
+            </div>
+          </div>
+          
+        <div class="content-line mb-4">
+         <select name="destination" id="travel-options" class="form-select">
+          <option value="" selected disabled>Selecione uma preferência de destino</option>
           <option value="pe">Pernambuco</option>
           <option value="pb">Paraíba</option>
           <option value="ba">Bahia</option>
@@ -40,36 +44,37 @@
          </select>
         </div>
 
-        <div class="content-line">
-          <fieldset>
-          Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip? <br><br>
-          <textarea name="reasons" id="reasons" cols="60" rows="30" required></textarea>
-          </fieldset>
+        <div class="content-line mb-4">
+         <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p> 
+          <textarea name="reasons" id="reasons" rows="3" class="form-control" required></textarea>
         </div>
 
-        <div class="content-line">
-          <label for="date-input">
-          Melhor data para a sua viagem: <input type="date" name="date" id="date-input" required>
-          </label>
-        </div>
-
-        <fieldset>
-          <div class="content-line">
-            <label for="check-news">
-              <input type="checkbox" name="check1" id="check-news"> Gostaria de receber e-mail e promoções da trybe?
-            </label>
-
-            <label for="check-images">
-            <input type="checkbox" name="check2" id="check-images" required><strong> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</strong>
-            </label>
+        <div class="content-line row g-3 align-items-center mb-4">
+          <div class="col-auto">
+            <label for="date-input">Melhor data para a sua viagem:</label>
           </div>
-        </fieldset>
+          <div class="col-auto">
+           <input type="date" name="date" id="date-input" required class="form-control">
+          </div>
+        </div>
+
+        <div class="content-line mb-4">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="check1" id="check-news"> 
+            <label class="form-check-label" for="check-news">Gostaria de receber e-mail e promoções da trybe?</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="check2" id="check-images" required><strong> 
+            <label class="form-check-label" for="check-images"></label>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</strong>
+          </label>
+          </div>
+        </div>
       </div>
 
       <div id="buttons-container">
         <div class="buttons">
-          <button type="submit" id="button-submit">Enviar</button>
-          <button type="reset" id="button-reset">Limpar informações</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="reset" class="btn btn-light">Limpar informações</button>
         </div>
       </div>
 
