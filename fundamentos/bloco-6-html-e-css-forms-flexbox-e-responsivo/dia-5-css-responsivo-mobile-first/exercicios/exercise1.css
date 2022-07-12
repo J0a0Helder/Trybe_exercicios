@@ -33,15 +33,19 @@
   }
   
   main {
-  
+    display: flex;
+    flex-direction: column;
   }
   
   section {
-   
+    display: flex;
+    flex-flow: row wrap;
   }
   
   figure {
       margin: 0;
+      border-radius: 3px;
+      text-align: center;
   }
   
   figcaption {
@@ -58,10 +62,10 @@
         font-size: large;
     }
     h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
     h2 {
-        font-size: 27px;
+        font-size: 25px;
     }
     section {
         display: flex;
@@ -69,5 +73,22 @@
     }
     figure {
         margin: 0 8px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    body {
+        background-color: rgb(212, 252, 238);
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    figure {
+        width: 30%;
+        margin: 0 15px;
+        
     }
   }
