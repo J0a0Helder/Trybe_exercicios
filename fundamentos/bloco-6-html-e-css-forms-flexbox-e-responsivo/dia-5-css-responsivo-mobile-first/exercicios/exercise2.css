@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+}
+
+#title {
+  text-align: center;
+}
+
+p {
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: rgb(206, 219, 183);
+    font-family: sans-serif;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  p {
+    padding: 0 5px;
+    line-height: 1.5em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: rgb(207, 224, 230);
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: rgb(252, 230, 255);
+  }
+
+  .container {
+    flex-wrap: nowrap;
+  }
+}
