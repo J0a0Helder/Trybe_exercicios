@@ -61,4 +61,10 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+// Adicione o código do exercício aqui: 
+
+//exercicio 1 - Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
+function formatedBookNames(books) {
+  return books.map((book) => `Livro: ${book.name} - Gênero: ${book.genre} - Autor: ${book.author.name}.`);
+}
+console.log(formatedBookNames(books));
