@@ -131,3 +131,4 @@ console.log(someBookWasReleaseOnThe80s(books));
 /////////////////////////////////////////////////////////////////////////////////////
 
 // exercicio 7 Faça uma função que retorne true, caso nenhum author tenha nascido no mesmo ano, e false, caso contrário.
+
